@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Belajar CSS dasar</title>
+    <style>
+      /* Ini komentar, gunakan ctrl—/ */
+      /* ID di tandai dengan tanda #[nama_id] */
+      #box1 {
+        background-color: rgb(3, 40, 40);
+        width: 400px;
+        padding: 20px;
+      }
+      #title {
+        color: rgb(181, 133, 133);
+      }
+
+      /* class di tandai dengan . (titik) */
+      .deskripsi {
+        font-size: 16px;
+        color: orange;
+      }
+      .deskripsi b {
+        font-size: 24px;
+      }
+
+      #box2 {
+        background-color: tomato;
+        width: 200px;
+        padding: 20px;
+        margin: 10px;
+      }
+      /* bisa mentargetkan selector turunannya asal di dalam suatu tag  */
+      #box2 h1 {
+        color: white;
+        text-align: center;
+      }
+      #box2 a {
+        color: greenyellow;
+        font-weight: bold;
+      }
+
+      p {
+        /* font-family: ganti jenis font */
+        font-family: 'Arial';
+      }
+
+      h1 {
+        font-family: 'Courier New';
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box1">
+      <h1 id="title">Belajar CSS</h1>
+      <p class="deskripsi">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        <b>Porro</b> dolores animi quae maxime error.
+      </p>
+    </div>
+    <br />
+    <div id="box2">
+      <h1>Kotak Baru</h1>
+      <p class="deskripsi">Ini div bawah</p>
+      <a href="https://google.com" target="_blank">Klik Google ke Tab Baru</a>
+      <h3>Tipe-tipe List</h3>
+      <!-- atribut type: a, A, i, I -->
+      <ol type="I">
+        <li>Tomat</li>
+        <li>Brokoli</li>
+        <li>Bawang Merah</li>
+        <li>Bawang Putih</li>
+      </ol>
+      <!-- ul>li*3 (buat <ul> dengan 3 <li> item) -->
+      <!-- atribut type: circle, square, none -->
+      <ul type="square">
+        <li>Purworejo</li>
+        <li>Yogyakarta</li>
+        <li>Solo</li>
+      </ul>
+    </div>
+  </body>
+</html>
